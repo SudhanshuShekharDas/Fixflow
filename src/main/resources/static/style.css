@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f6f8; color: #1f2937; }
+header { background: #111827; color: white; padding: 22px 7%; display: flex; justify-content: space-between; align-items: center; }
+header h1 { margin: 0; }
+main { width: 86%; margin: 30px auto; }
+.cards { display: grid; grid-template-columns: repeat(5,1fr); gap: 15px; margin-bottom: 25px; }
+.card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px #0001; }
+.card strong { display: block; font-size: 28px; margin-top: 8px; }
+.panel { background: white; padding: 22px; border-radius: 10px; margin-bottom: 25px; box-shadow: 0 2px 8px #0001; }
+form { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+input, textarea, select, button { padding: 11px; border: 1px solid #d1d5db; border-radius: 6px; font: inherit; }
+textarea { min-height: 90px; grid-column: 1 / -1; }
+button { background: #111827; color: white; cursor: pointer; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 11px; border-bottom: 1px solid #e5e7eb; text-align: left; }
+.small-btn { padding: 6px 9px; }
+@media(max-width:900px){ .cards{grid-template-columns:repeat(2,1fr)} table{font-size:12px} }

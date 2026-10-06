@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FixFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>FixFlow</h1>
+    <span>Maintenance Service Dashboard</span>
+</header>
+
+<main>
+    <section class="cards" id="stats"></section>
+
+    <section class="panel">
+        <h2>Create Service Request</h2>
+        <form id="requestForm">
+            <input id="title" placeholder="Problem title" required>
+            <input id="category" placeholder="Category" required>
+            <input id="location" placeholder="Location" required>
+            <select id="priority">
+                <option>HIGH</option>
+                <option>MEDIUM</option>
+                <option>LOW</option>
+            </select>
+            <textarea id="description" placeholder="Describe the problem"></textarea>
+            <button>Create Request</button>
+        </form>
+    </section>
+
+    <section class="panel">
+        <h2>Service Requests</h2>
+        <table>
+            <thead><tr><th>ID</th><th>Problem</th><th>Category</th><th>Priority</th><th>Status</th><th>Deadline</th><th>Action</th></tr></thead>
+            <tbody id="requests"></tbody>
+        </table>
+    </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
